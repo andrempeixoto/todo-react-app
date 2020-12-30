@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { v4 as uuid } from 'uuid';
-import { AiOutlinePlus } from 'react-icons/ai';
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
