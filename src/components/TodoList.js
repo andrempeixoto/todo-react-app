@@ -3,7 +3,13 @@ import Todo from './Todo';
 import TodoForm from './TodoForm';
 
 function TodoList() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(
+    JSON.parse(localStorage.getItem('list_todos')) || []
+  );
+
+  const saveToStorage = (todos) => {
+    localStorage.setItem('list_todos', JSON.stringify(todos));
+  };
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -13,6 +19,7 @@ function TodoList() {
     const newTodos = [...todos, todo];
 
     setTodos(newTodos);
+    saveToStorage(newTodos);
   };
 
   const updateTodo = (todoId, newValue) => {
@@ -27,16 +34,18 @@ function TodoList() {
   const removeTodo = (id) => {
     const removeArr = [...todos].filter((todo) => todo.id !== id);
     setTodos(removeArr);
+    saveToStorage(removeArr);
   };
 
   const completeTodo = (id) => {
-    let updatedTodos = todos.map((todo) => {
+    let completedTodos = todos.map((todo) => {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete;
       }
       return todo;
     });
-    setTodos(updatedTodos);
+    setTodos(completedTodos);
+    saveToStorage(completedTodos);
   };
 
   return (
