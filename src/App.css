@@ -160,8 +160,9 @@ h1 {
 @media only screen and (max-width: 600px) {
   
   .todo-app {
-    width: 90vw;
-    height: 80vh;
+    width: 85vw;
+    height: 90vh;
+    margin: 7% auto;
   }
 
   h1 {
