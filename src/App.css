@@ -161,7 +161,7 @@ h1 {
   
   .todo-app {
     width: 85vw;
-    height: 90vh;
+    min-height: 90vh;
     margin: 7% auto;
   }
 
