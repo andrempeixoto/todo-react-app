@@ -7,21 +7,15 @@
 }
 
 body {
-  /* background-color:#1d323b; */
-  /* background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  ); */
   background-color: #21222c;
 }
+
 .todo-app {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 60vw;
   min-height: 80vh;
-  /* background: #2A3F54; */
   background-color: #191a21;
   text-align: center;
   margin: 5% auto;
@@ -30,8 +24,8 @@ body {
 }
 
 h1 {
-  margin: 48px;
-  color: #fff;
+  margin: 42px;
+  color: lightcyan;
   font-size: 24px;
 }
 
@@ -45,7 +39,6 @@ h1 {
 }
 
 .todo-input {
-  margin: 4px 0;
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #6272a4;
@@ -58,7 +51,7 @@ h1 {
 }
 
 .todo-input::placeholder {
-  color: #e2e2e2;
+  color: #fff;
 }
 
 .todo-button {
@@ -67,29 +60,17 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  /* background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  ); */
   background-color: #6272a4;
   color: #fff;
-  text-transform: capitalize;
   font-size: 16px;
 }
 
 .todo-input.edit {
-  /* border: 2px solid #149fff; */
   border: 2px solid #8095d9;
   width: 60%;
 }
 
 .todo-button.edit {
-  /* background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  ); */
   background-color: #8095d9;
   padding: 16px;
 }
@@ -105,42 +86,13 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin: 4px auto;
-  background-color: #282a36;
+  background-color: #383b4b;
   color: #fff;
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 118, 20, 1) 0%,
-    rgba(255, 84, 17, 1) 100%
-  ); */
   padding: 0 16px;
   border-radius: 5px;
   width:74%;
   cursor: pointer;
 }
-
-/* .todo-row:nth-child(4n + 1) {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-}
-
-.todo-row:nth-child(4n + 2) {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
-}
-
-.todo-row:nth-child(4n + 3) {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-} */
 
 .todo-row-text {
   display: flex;
@@ -166,12 +118,77 @@ h1 {
   color: #fff;
 }
 
+/* Blue Theme */
+body.blue-theme {
+    background-color: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+}
+
+.todo-button.blue-theme {
+  background: linear-gradient(
+  90deg,
+  rgba(93, 12, 255, 1) 0%,
+  rgba(155, 0, 250, 1) 100%
+);
+}
+
+.todo-input.edit.blue-theme {
+  border: 2px solid #149fff;
+}
+
+/* Color options for other themes: todo-row */
+/* .todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  padding: 0 16px;
+  border-radius: 5px;
+  width:74%;
+  cursor: pointer;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+} */
+
+
+/* Mobile Layout */
 @media only screen and (max-width: 600px) {
   
   .todo-app {
-    width: 85vw;
+    width: 90vw;
     min-height: 90vh;
-    margin: 7% auto;
+    margin: 5% auto;
   }
 
   h1 {
