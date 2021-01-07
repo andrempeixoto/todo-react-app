@@ -2,8 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 body {
@@ -27,6 +27,8 @@ h1 {
   margin: 42px;
   color: lightcyan;
   font-size: 24px;
+  font-weight: ;
+  letter-spacing: 0.4rem;
 }
 
 .complete {
@@ -88,6 +90,8 @@ h1 {
   margin: 4px auto;
   background-color: #383b4b;
   color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
   padding: 0 16px;
   border-radius: 5px;
   width:74%;
