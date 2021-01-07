@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { v4 as uuid } from 'uuid';
 
 function TodoForm(props) {
@@ -6,9 +6,9 @@ function TodoForm(props) {
 
   const inputRef = useRef(null);
 
-  useEffect(() => {
-    inputRef.current.focus();
-  });
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // });
 
   const handleChange = (event) => {
     setInput(event.target.value);
