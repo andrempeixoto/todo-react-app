@@ -6,9 +6,9 @@ function TodoForm(props) {
 
   const inputRef = useRef(null);
 
-  useEffect(() => {
-    inputRef.current.focus();
-  });
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // });
 
   const handleChange = (event) => {
     setInput(event.target.value);
