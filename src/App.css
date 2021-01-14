@@ -41,8 +41,8 @@ h1 {
   margin: 42px;
   color: lightcyan;
   font-size: 24px;
-  font-weight: ;
   letter-spacing: 0.4rem;
+  white-space: nowrap;
 }
 
 .complete {
@@ -71,7 +71,7 @@ h1 {
 }
 
 .todo-button {
-  padding: 16px 3% ;
+  padding: 16px .9rem ;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -106,17 +106,18 @@ h1 {
   color: #fff;
   text-transform: capitalize;
   font-weight: 500;
-  padding: 0 16px;
+  padding: 0 20px 0 16px;
   border-radius: 5px;
-  width:74%;
+  min-width:76%;
   cursor: pointer;
 }
 
 .todo-row-text {
   display: flex;
   flex: 1;
-  padding: 0.9rem 0;
-  line-height: 1.5rem;
+  padding: 0.95rem 0;
+  line-height: 20px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -222,7 +223,7 @@ body.blue-theme {
   }
 
   .todo-row {
-    width:87%;
+    width:88%;
   }
 
   .delete-icon {
