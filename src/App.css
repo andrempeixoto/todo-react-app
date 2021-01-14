@@ -10,6 +10,20 @@ body {
   background-color: #21222c;
 }
 
+body::-webkit-scrollbar{
+  width: 6px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #383b4b;
+  border-radius: 8px;
+}
+
 .todo-app {
   display: flex;
   flex-direction: column;
