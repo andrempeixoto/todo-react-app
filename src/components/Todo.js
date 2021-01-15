@@ -33,7 +33,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
         >
           {todo.text}
         </div>
-        <div className="icons">
+        <div className="todo-icons">
           <AiFillDelete
             onClick={() => removeTodo(todo.id)}
             className="delete-icon"
